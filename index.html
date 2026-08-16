@@ -32,6 +32,7 @@
 
 		<main id="main-content" class="article-body" tabindex="-1">
 			<article aria-labelledby="article-title">
+				<h2>Overview of CSS Scroll Animations</h2>
 				<p>For over a decade, creating interactive scroll effects meant writing event listeners that intercepted the browser's scrolling thread. Every scroll tick forced the browser to run JavaScript, recalculate element coordinates, and trigger costly layout repaints. On low-power mobile devices, this resulted in choppy, frustrating interfaces.</p>
 
 				<p>Today, modern web specifications allow us to link animation timelines directly to scroll parameters natively in CSS. This shifts the heavy mathematical lifting directly to the browser's compositor thread, running smoothly at maximum device refresh rates (90Hz, 120Hz) without waking up the main JavaScript thread.</p>
